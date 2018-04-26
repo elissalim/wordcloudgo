@@ -1,0 +1,4 @@
+https://www.quora.com/What-is-golang-good-for
+https://www.quora.com/Why-should-I-use-Go-Golang
+https://www.quora.com/Whats-the-best-thing-about-GoLang
+https://www.quora.com/Why-do-people-use-golang
