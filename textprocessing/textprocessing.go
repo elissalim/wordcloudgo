@@ -9,7 +9,6 @@ import (
 
 	//external library
 	"github.com/aaaton/golem"
-	"github.com/elissalim/wordcloudgo/textmining"
 )
 
 func stopWordsList() []string {
@@ -85,9 +84,8 @@ func (p PairList) Len() int { return len(p) }
 
 func (p PairList) Less(i, j int) bool { return p[i].Value < p[j].Value }
 
-func SortedResult() PairList {
+func SortedResult(content string) PairList {
 	stopWords := stopWordsList()
-	content := textmining.TextMining()
 	reg, err := regexp.Compile("[^a-zA-Z0-9]+")
 	if err != nil {
 		log.Println(err)

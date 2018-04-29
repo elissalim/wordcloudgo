@@ -8,10 +8,10 @@ import (
 
 func main() {
 	//extract web content from websites list
-	textmining.TextMining()
+	content := textmining.TextMining()
 
 	//use stop words list to do text processing
-	processedText := textprocessing.SortedResult()
+	processedText := textprocessing.SortedResult(content)
 
 	//create word cloud with specified criteria
 	wordcloud.WordCloud(processedText)
